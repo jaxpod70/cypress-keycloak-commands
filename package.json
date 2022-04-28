@@ -9,6 +9,7 @@
   ],
   "types": "index.d.ts",
   "scripts": {
+    "install": "npm run build",
     "clean": "rimraf dist/*",
     "build": "npm run clean && tsc",
     "test": "wait-on http://localhost:8081/auth && npm run cy:run",
